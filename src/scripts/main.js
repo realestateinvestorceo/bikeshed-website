@@ -67,17 +67,3 @@ if (showMoreBtn) {
   });
 }
 
-// Lazy-load Instagram embed script when community section is in view
-const communitySection = document.getElementById('community');
-if (communitySection) {
-  const igObserver = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-      const script = document.createElement('script');
-      script.src = 'https://www.instagram.com/embed.js';
-      script.async = true;
-      document.body.appendChild(script);
-      igObserver.disconnect();
-    }
-  }, { rootMargin: '200px' });
-  igObserver.observe(communitySection);
-}
