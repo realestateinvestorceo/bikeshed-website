@@ -151,10 +151,10 @@ body {
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(10,10,10,0.95) 0%,
-    rgba(10,10,10,0.6) 35%,
-    rgba(10,10,10,0.2) 60%,
-    rgba(10,10,10,0.3) 100%
+    rgba(10,10,10,0.97) 0%,
+    rgba(10,10,10,0.8) 30%,
+    rgba(10,10,10,0.5) 55%,
+    rgba(10,10,10,0.45) 100%
   );
 }
 .hero-content {
@@ -809,6 +809,9 @@ section { padding: 80px 24px; }
   .trail-videos { grid-template-columns: 1fr; }
 
   .reviews-grid { grid-template-columns: 1fr; }
+  .reviews-actions { display: flex; flex-direction: column; gap: 12px; align-items: center; }
+  .reviews-actions .btn-google { margin-left: 0; width: 100%; max-width: 300px; justify-content: center; }
+  .reviews-actions button { width: 100%; max-width: 300px; }
 
   .contact-grid { grid-template-columns: 1fr; gap: 32px; }
 
