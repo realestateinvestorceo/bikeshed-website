@@ -548,13 +548,15 @@ section { padding: 80px 24px; }
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 .review-video-wrapper {
-  max-width: 640px;
+  max-width: 360px;
   margin: 0 auto 48px;
 }
 .review-video-wrapper video {
   width: 100%;
+  max-height: 480px;
   border-radius: 12px;
   background: var(--black);
+  object-fit: cover;
 }
 .review-video-caption {
   display: flex;
