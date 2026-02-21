@@ -1,21 +1,3 @@
-// Image imports (Vite resolves these to hashed URLs at build time)
-import heroBg from '../images/hero-bg.webp';
-import galleryStorefront from '../images/gallery-storefront.webp';
-import galleryInterior from '../images/gallery-interior.webp';
-import galleryRepair from '../images/gallery-repair.webp';
-import galleryCounter from '../images/gallery-counter.webp';
-import galleryRetail from '../images/gallery-retail.webp';
-
-// Set hero background
-document.getElementById('heroBg').style.backgroundImage = `url(${heroBg})`;
-
-// Set gallery images
-document.querySelector('#galleryFeatured img').src = galleryStorefront;
-document.querySelector('#galleryInterior img').src = galleryInterior;
-document.querySelector('#galleryRepair img').src = galleryRepair;
-document.querySelector('#galleryCounter img').src = galleryCounter;
-document.querySelector('#galleryRetail img').src = galleryRetail;
-
 // Nav scroll effect
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
@@ -66,4 +48,3 @@ if (showMoreBtn) {
     showMoreBtn.style.display = 'none';
   });
 }
-
