@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bike Shed — Rancho Santa Margarita's Local Bike Shop</title>
+<meta name="description" content="Bike Shed in Rancho Santa Margarita, CA — expert mountain bike repair, tune-ups, parts, and gear. Walk-ins welcome. Mobile service across Laguna & South OC. Mon-Sat 10am-6pm. Call (760) 349-6825.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://bikeshed-website.vercel.app/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Bike Shed — Rancho Santa Margarita's Local Bike Shop">
+<meta property="og:description" content="Expert MTB repair, tune-ups, and gear in Rancho Santa Margarita, CA. Walk-ins welcome. Mobile service across Laguna & South OC.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bikeshed-website.vercel.app/">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Styles -->
+<link rel="stylesheet" href="/src/styles/main.css">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Bike Shed",
+  "description": "Expert mountain bike repair, tune-ups, parts, and gear in Rancho Santa Margarita, CA. Mobile service across Laguna & South Orange County.",
+  "url": "https://bikeshed-website.vercel.app",
+  "telephone": "+17603496825",
+  "image": "https://bikeshed-website.vercel.app/og-image.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "29851 Aventura, Unit B",
+    "addressLocality": "Rancho Santa Margarita",
+    "addressRegion": "CA",
+    "postalCode": "92688",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.6409,
+    "longitude": -117.6031
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "10:00",
+      "closes": "18:00"
+    }
+  ],
+  "priceRange": "$$",
+  "foundingDate": "2021",
+  "sameAs": [
+    "https://www.instagram.com/lagunabikeshed/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Bike Services",
+    "itemListElement": [
+      {"@type": "Offer", "name": "Basic Tune-Up", "price": "99", "priceCurrency": "USD"},
+      {"@type": "Offer", "name": "Major Tune-Up", "price": "149", "priceCurrency": "USD"},
+      {"@type": "Offer", "name": "Full Overhaul", "price": "300", "priceCurrency": "USD"}
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "20",
+    "bestRating": "5"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- Skip to content -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- SVG sprite for reusable icons -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+  </symbol>
+  <symbol id="icon-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+  </symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+  </symbol>
+  <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+  </symbol>
+  <symbol id="icon-van" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+  </symbol>
+</svg>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">Bike <span>Shed</span></div>
+  <div class="nav-links" id="navLinks">
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#shop">Shop</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.instagram.com/lagunabikeshed/" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram">
+      <svg><use href="#icon-instagram"/></svg>
+    </a>
+    <a href="tel:7603496825" class="nav-call">
+      <svg><use href="#icon-phone"/></svg>
+      Call Now
+    </a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content" id="main">
+    <div class="hero-tag">Est. 2021 &middot; Rancho Santa Margarita, CA</div>
+    <h1>Your Local<br><em>Bike Shop</em></h1>
+    <p>Expert repair, quality parts, and gear for every ride. Walk-ins welcome — we'll get you back on the trail.</p>
+    <div class="hero-actions">
+      <a href="tel:7603496825" class="btn-primary">
+        <svg><use href="#icon-phone"/></svg>
+        (760) 349-6825
+      </a>
+      <a href="#services" class="btn-secondary">View Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- INFO BAR -->
+<div class="info-bar">
+  <div class="info-bar-inner">
+    <div class="info-item">
+      <div class="info-item-label">Hours</div>
+      <div class="info-item-value">Mon&ndash;Sat &middot; 10am&ndash;6pm</div>
+    </div>
+    <div class="info-item">
+      <div class="info-item-label">Walk-Ins</div>
+      <div class="info-item-value">Always Welcome</div>
+    </div>
+    <div class="info-item">
+      <div class="info-item-label">Location</div>
+      <div class="info-item-value">Rancho Santa Margarita</div>
+    </div>
+    <div class="info-item">
+      <div class="info-item-label">Mobile Service</div>
+      <div class="info-item-value">Laguna &amp; South OC</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header reveal">
+    <div class="section-tag">What We Do</div>
+    <h2>Services</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+      </div>
+      <h3>Tune-Ups</h3>
+      <p>From basic adjustments to full overhauls. We'll dial in your shifting, brakes, and bearings so your ride feels brand new.</p>
+      <div class="service-price">From $99</div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="24" height="24"><use href="#icon-clock"/></svg>
+      </div>
+      <h3>Brake Service</h3>
+      <p>Brake bleeds, pad replacements, cable adjustments, and hydraulic installs. Stop on a dime, every time.</p>
+      <div class="service-price">From $15</div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m-7-10.9 5.2 3m3.6 2.1 5.2 3M1 12h6m6 0h6m-17.9-7 3 5.2m2.1 3.6 3 5.2M5.1 19l5.2-3m3.6-2.1 5.2-3"/></svg>
+      </div>
+      <h3>Tires &amp; Wheels</h3>
+      <p>Tire installs, tube replacements, insert setups, and wheel truing. We stock Maxxis and more.</p>
+      <div class="service-price">From $18</div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      </div>
+      <h3>Parts &amp; Gear</h3>
+      <p>Components, accessories, apparel, and protection kits from the brands you trust. In stock and ready to go.</p>
+      <div class="service-price">Shop In-Store</div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+      </div>
+      <h3>Suspension</h3>
+      <p>Fork and shock service, setup, and tuning. We work with RockShox, Fox, and more to keep your ride plush.</p>
+      <div class="service-price">Call for Quote</div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3>Ride Wrap</h3>
+      <p>Frame protection kits professionally installed. Keep your bike looking fresh no matter how gnarly the trail gets.</p>
+      <div class="service-price">Call for Quote</div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="brands reveal">
+  <div class="section-header">
+    <div class="section-tag">Brands We Carry</div>
+    <h2>Trusted Names</h2>
+  </div>
+  <div class="brands-list">
+    <span>SRAM</span>
+    <span>RockShox</span>
+    <span>Maxxis</span>
+    <span>Industry Nine</span>
+    <span>Quarq</span>
+    <span>Intense</span>
+    <span>ODI</span>
+    <span>Muc-Off</span>
+    <span>Pelli</span>
+    <span>100%</span>
+    <span>TRP</span>
+    <span>MTX Braking</span>
+    <span>Rim Saver</span>
+    <span>Park Tool</span>
+    <span>Ride Wrap</span>
+    <span>Shimano</span>
+    <span>Kali</span>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="section-header reveal">
+    <div class="section-tag">Transparent Pricing</div>
+    <h2>Service Menu</h2>
+  </div>
+  <div class="pricing-grid">
+    <div class="pricing-card reveal">
+      <h3>Basic Tune-Up</h3>
+      <div class="pricing-amount"><sup>$</sup>99</div>
+      <ul class="pricing-features">
+        <li>Shift adjustment</li>
+        <li>Brake adjustment</li>
+        <li>Tire inflation check</li>
+        <li>Chain lube</li>
+        <li>Safety inspection</li>
+      </ul>
+    </div>
+    <div class="pricing-card popular reveal">
+      <h3>Major Tune-Up</h3>
+      <div class="pricing-amount"><sup>$</sup>149</div>
+      <ul class="pricing-features">
+        <li>Everything in Basic</li>
+        <li>Drivetrain cleaning</li>
+        <li>Wheel truing</li>
+        <li>Headset &amp; BB check</li>
+        <li>Full bike wash</li>
+      </ul>
+    </div>
+    <div class="pricing-card reveal">
+      <h3>Full Overhaul</h3>
+      <div class="pricing-amount"><sup>$</sup>300</div>
+      <ul class="pricing-features">
+        <li>Complete teardown</li>
+        <li>All bearings serviced</li>
+        <li>Cable &amp; housing replaced</li>
+        <li>Full rebuild &amp; adjustment</li>
+        <li>Road/trail test</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="shop">
+  <div class="section-header reveal">
+    <div class="section-tag">Inside the Shed</div>
+    <h2>The Shop</h2>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item featured reveal" id="galleryFeatured">
+      <img alt="Bike Shed storefront in Rancho Santa Margarita, CA" width="800" height="600" loading="eager" decoding="async">
+      <div class="gallery-caption">The Shed &mdash; Rancho Santa Margarita, CA</div>
+    </div>
+    <div class="gallery-item reveal" id="galleryInterior">
+      <img alt="Inside the Bike Shed shop with mountain bikes on display" width="800" height="600" loading="lazy" decoding="async">
+    </div>
+    <div class="gallery-item reveal" id="galleryRepair">
+      <img alt="Bike Shed repair area with tools and workbench" width="800" height="600" loading="lazy" decoding="async">
+    </div>
+    <div class="gallery-item reveal" id="galleryCounter">
+      <img alt="Service counter at the Bike Shed" width="800" height="600" loading="lazy" decoding="async">
+    </div>
+    <div class="gallery-item reveal" id="galleryRetail">
+      <img alt="Retail section with bike gear and apparel" width="800" height="600" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY / INSTAGRAM -->
+<section class="community" id="community">
+  <div class="section-header reveal">
+    <div class="section-tag">On the Trail</div>
+    <h2>Follow the Ride</h2>
+  </div>
+  <div class="instagram-grid">
+    <div class="instagram-embed reveal">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/lagunabikeshed/" style="background:#000; border:0; border-radius:12px; margin:0; max-width:100%; min-width:280px; padding:0; width:100%;">
+        <div style="padding:16px;text-align:center;">
+          <a href="https://www.instagram.com/lagunabikeshed/" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;font-weight:600;">View on Instagram</a>
+        </div>
+      </blockquote>
+    </div>
+    <div class="instagram-embed reveal">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/lagunabikeshed/" style="background:#000; border:0; border-radius:12px; margin:0; max-width:100%; min-width:280px; padding:0; width:100%;">
+        <div style="padding:16px;text-align:center;">
+          <a href="https://www.instagram.com/lagunabikeshed/" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;font-weight:600;">View on Instagram</a>
+        </div>
+      </blockquote>
+    </div>
+    <div class="instagram-embed reveal">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/lagunabikeshed/" style="background:#000; border:0; border-radius:12px; margin:0; max-width:100%; min-width:280px; padding:0; width:100%;">
+        <div style="padding:16px;text-align:center;">
+          <a href="https://www.instagram.com/lagunabikeshed/" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;font-weight:600;">View on Instagram</a>
+        </div>
+      </blockquote>
+    </div>
+  </div>
+  <div class="instagram-cta reveal">
+    <a href="https://www.instagram.com/lagunabikeshed/" target="_blank" rel="noopener" class="btn-secondary">
+      <svg><use href="#icon-instagram"/></svg>
+      Follow @lagunabikeshed
+    </a>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="section-header reveal">
+    <div class="section-tag">What People Say</div>
+    <h2>Reviews</h2>
+  </div>
+
+  <!-- Video Review -->
+  <div class="review-video-wrapper reveal">
+    <video controls preload="metadata" playsinline poster="">
+      <source src="/video/review-andy.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="review-video-caption">
+      <div>
+        <span class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="review-author">&mdash; Andy</span>
+      </div>
+      <span class="review-source">Video Review</span>
+    </div>
+  </div>
+
+  <!-- Text Reviews -->
+  <div class="reviews-grid">
+    <div class="review-card reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"Bobby did an excellent job fixing my bike. He was knowledgeable, efficient, and took the time to explain what needed to be done before getting started."</p>
+      <div class="review-author">Sean A. <span class="review-source">&middot; Google</span></div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"When I brought the tire back the second time they took care of it at no additional cost. Appreciate the customer service and the willingness to get it right!"</p>
+      <div class="review-author">Jordan M. <span class="review-source">&middot; Google</span></div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"He came with his van to my house the same afternoon and fixed the problem easily. He also installed a freewheel kit on my son's new bike for Christmas."</p>
+      <div class="review-author">Adam H. <span class="review-source">&middot; Google</span></div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"Thai is a top-tier bike mechanic and an all-around great guy. He's been well-known in the Orange County bike community for years."</p>
+      <div class="review-author">Jose <span class="review-source">&middot; Google</span></div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"A really great repair shop with excellent service. Thai, the owner, is fair and does a great job. He quickly diagnosed my bike's problem and gave me a low-cost solution."</p>
+      <div class="review-author">Ed M. <span class="review-source">&middot; Google</span></div>
+    </div>
+    <div class="review-card reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"Thai is a kind gentleman. He will text with you and come to your home, and get you fixed up lickety split. Definitely recommend."</p>
+      <div class="review-author">Aria M. <span class="review-source">&middot; Google</span></div>
+    </div>
+    <div class="review-card hidden reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"He came to me and fixed it on the spot. Replaced both of my inner tubes, replaced both of my tires, very quickly and for a great price too."</p>
+      <div class="review-author">Karina K. <span class="review-source">&middot; Google</span></div>
+    </div>
+    <div class="review-card hidden reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"The service and pricing were both excellent. I highly recommend this place for any service you need for your bike. Happy Trails!"</p>
+      <div class="review-author">Richard L. <span class="review-source">&middot; Google</span></div>
+    </div>
+    <div class="review-card hidden reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"They have worked on my bikes for the last 4 years. Overall, great service and great work. Highly recommend them."</p>
+      <div class="review-author">Essan K. <span class="review-source">&middot; Google</span></div>
+    </div>
+    <div class="review-card hidden reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text">"Rad shop, local vibe. Personal customer service!"</p>
+      <div class="review-author">Marc J. <span class="review-source">&middot; Google</span></div>
+    </div>
+  </div>
+
+  <div class="reviews-actions reveal">
+    <button id="showMoreReviews">Show More Reviews</button>
+    <a href="https://www.google.com/maps/place/Bike+Shed/" target="_blank" rel="noopener" class="btn-google reviews-actions button">Leave a Review</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <h3>Come See Us</h3>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="18" height="18"><use href="#icon-phone"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">Phone</div>
+          <div class="contact-detail-value"><a href="tel:7603496825">(760) 349-6825</a></div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="18" height="18"><use href="#icon-map"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">Main Shop</div>
+          <div class="contact-detail-value">
+            29851 Aventura, Unit B<br>
+            Rancho Santa Margarita, CA 92688
+          </div>
+          <div class="contact-detail-note">Located in the rear lot, by Kitchen and Oliver's Osteria</div>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">
+          <svg width="18" height="18"><use href="#icon-clock"/></svg>
+        </div>
+        <div>
+          <div class="contact-detail-label">Hours</div>
+          <div class="contact-detail-value">Mon &ndash; Sat: 10am &ndash; 6pm<br>Sunday: Closed</div>
+        </div>
+      </div>
+      <div class="contact-mobile-badge">
+        <svg><use href="#icon-van"/></svg>
+        We also come to you &mdash; mobile repair across Laguna &amp; South OC
+      </div>
+      <div style="margin-top:32px;">
+        <a href="tel:7603496825" class="btn-primary">
+          <svg><use href="#icon-phone"/></svg>
+          Call Now
+        </a>
+      </div>
+    </div>
+    <div class="map-container reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5!2d-117.603!3d33.641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM4JzI3LjYiTiAxMTfCsDM2JzExLjIiVw!5e0!3m2!1sen!2sus!4v1"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Bike Shed location on Google Maps">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-social">
+    <a href="https://www.instagram.com/lagunabikeshed/" target="_blank" rel="noopener" aria-label="Follow us on Instagram">
+      <svg><use href="#icon-instagram"/></svg>
+    </a>
+    <a href="https://www.google.com/maps/place/Bike+Shed/" target="_blank" rel="noopener" aria-label="Find us on Google Maps">
+      <svg><use href="#icon-map"/></svg>
+    </a>
+  </div>
+  <p>&copy; 2025 Bike Shed. Rancho Santa Margarita &amp; Laguna, CA. <a href="tel:7603496825">(760) 349-6825</a></p>
+</footer>
+
+<!-- Scripts -->
+<script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
