@@ -67,9 +67,12 @@
     "@type": "OfferCatalog",
     "name": "Bike Services",
     "itemListElement": [
-      {"@type": "Offer", "name": "Basic Tune-Up", "price": "99", "priceCurrency": "USD"},
+      {"@type": "Offer", "name": "Basic Tune-Up", "price": "99.99", "priceCurrency": "USD"},
       {"@type": "Offer", "name": "Major Tune-Up", "price": "149", "priceCurrency": "USD"},
-      {"@type": "Offer", "name": "Full Overhaul", "price": "300", "priceCurrency": "USD"}
+      {"@type": "Offer", "name": "Brake Bleed", "price": "40", "priceCurrency": "USD"},
+      {"@type": "Offer", "name": "Brakeset Install", "price": "125", "priceCurrency": "USD"},
+      {"@type": "Offer", "name": "eBike Tire/Tube Replacement", "price": "35", "priceCurrency": "USD"},
+      {"@type": "Offer", "name": "Rear Suspension Service", "price": "240", "priceCurrency": "USD"}
     ]
   },
   "aggregateRating": {
@@ -182,15 +185,13 @@
       </div>
       <h3>Tune-Ups</h3>
       <p>From basic adjustments to full overhauls. We'll dial in your shifting, brakes, and bearings so your ride feels brand new.</p>
-      <div class="service-price">From $99</div>
     </div>
     <div class="service-card reveal">
       <div class="service-icon">
         <svg width="24" height="24"><use href="#icon-clock"/></svg>
       </div>
       <h3>Brake Service</h3>
-      <p>Brake bleeds, pad replacements, cable adjustments, and hydraulic installs. Stop on a dime, every time.</p>
-      <div class="service-price">From $15</div>
+      <p>Brake bleeds, pad replacements, cable adjustments, and full brakeset installs. Stop on a dime, every time.</p>
     </div>
     <div class="service-card reveal">
       <div class="service-icon">
@@ -198,15 +199,6 @@
       </div>
       <h3>Tires &amp; Wheels</h3>
       <p>Tire installs, tube replacements, insert setups, and wheel truing. We stock Maxxis and more.</p>
-      <div class="service-price">From $18</div>
-    </div>
-    <div class="service-card reveal">
-      <div class="service-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-      </div>
-      <h3>Parts &amp; Gear</h3>
-      <p>Components, accessories, apparel, and protection kits from the brands you trust. In stock and ready to go.</p>
-      <div class="service-price">Shop In-Store</div>
     </div>
     <div class="service-card reveal">
       <div class="service-icon">
@@ -214,7 +206,13 @@
       </div>
       <h3>Suspension</h3>
       <p>Fork and shock service, setup, and tuning. We work with RockShox, Fox, and more to keep your ride plush.</p>
-      <div class="service-price">Call for Quote</div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      </div>
+      <h3>Parts &amp; Gear</h3>
+      <p>Components, accessories, apparel, and protection kits from the brands you trust. In stock and ready to go.</p>
     </div>
     <div class="service-card reveal">
       <div class="service-icon">
@@ -222,7 +220,6 @@
       </div>
       <h3>Ride Wrap</h3>
       <p>Frame protection kits professionally installed. Keep your bike looking fresh no matter how gnarly the trail gets.</p>
-      <div class="service-price">Call for Quote</div>
     </div>
   </div>
 </section>
@@ -263,7 +260,8 @@
   <div class="pricing-grid">
     <div class="pricing-card reveal">
       <h3>Basic Tune-Up</h3>
-      <div class="pricing-amount"><sup>$</sup>99</div>
+      <div class="pricing-amount"><sup>$</sup>99<span class="pricing-cents">.99</span></div>
+      <div class="pricing-time">~1 hour</div>
       <ul class="pricing-features">
         <li>Shift adjustment</li>
         <li>Brake adjustment</li>
@@ -275,6 +273,7 @@
     <div class="pricing-card popular reveal">
       <h3>Major Tune-Up</h3>
       <div class="pricing-amount"><sup>$</sup>149</div>
+      <div class="pricing-time">~2 hours</div>
       <ul class="pricing-features">
         <li>Everything in Basic</li>
         <li>Drivetrain cleaning</li>
@@ -284,16 +283,52 @@
       </ul>
     </div>
     <div class="pricing-card reveal">
-      <h3>Full Overhaul</h3>
-      <div class="pricing-amount"><sup>$</sup>300</div>
+      <h3>Brake Bleed</h3>
+      <div class="pricing-amount"><sup>$</sup>40</div>
+      <div class="pricing-time">~1 hour</div>
       <ul class="pricing-features">
-        <li>Complete teardown</li>
-        <li>All bearings serviced</li>
-        <li>Cable &amp; housing replaced</li>
-        <li>Full rebuild &amp; adjustment</li>
-        <li>Road/trail test</li>
+        <li>Full brake bleed</li>
+        <li>Pad inspection</li>
+        <li>Lever feel restored</li>
       </ul>
     </div>
+    <div class="pricing-card reveal">
+      <h3>Brakeset Install</h3>
+      <div class="pricing-amount"><sup>$</sup>125</div>
+      <div class="pricing-time">~2 hours</div>
+      <ul class="pricing-features">
+        <li>Full brakeset installation</li>
+        <li>Bleed &amp; adjustment</li>
+        <li>Test &amp; dial-in</li>
+      </ul>
+    </div>
+    <div class="pricing-card reveal">
+      <h3>eBike Tire/Tube</h3>
+      <div class="pricing-amount"><sup>$</sup>35</div>
+      <div class="pricing-time">~30 mins</div>
+      <ul class="pricing-features">
+        <li>Tire or tube replacement</li>
+        <li>Urban &amp; eBike compatible</li>
+        <li>Quick turnaround</li>
+      </ul>
+    </div>
+    <div class="pricing-card reveal">
+      <h3>Rear Suspension</h3>
+      <div class="pricing-amount"><sup>$</sup>240</div>
+      <div class="pricing-time">~2.5 hours</div>
+      <ul class="pricing-features">
+        <li>Full rear shock service</li>
+        <li>Seal &amp; oil replacement</li>
+        <li>Setup &amp; tuning</li>
+      </ul>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:32px;" class="reveal">
+    <p style="font-size:14px;color:rgba(245,242,237,0.5);margin-bottom:16px;">Need something not listed? Just give us a call.</p>
+    <a href="tel:+17603496825" class="btn-primary">
+      <svg><use href="#icon-phone"/></svg>
+      Call to Book
+    </a>
   </div>
 </section>
 

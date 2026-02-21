@@ -335,12 +335,6 @@ section { padding: 80px 24px; }
   color: rgba(245,242,237,0.65);
   margin-bottom: 16px;
 }
-.service-price {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--gold);
-}
 
 /* ========== SHOP GALLERY ========== */
 .gallery {
@@ -455,6 +449,16 @@ section { padding: 80px 24px; }
   margin-bottom: 16px;
 }
 .pricing-amount sup { font-size: 24px; vertical-align: super; }
+.pricing-cents {
+  font-size: 24px;
+  font-weight: 700;
+}
+.pricing-time {
+  font-size: 13px;
+  color: rgba(245,242,237,0.45);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
 .pricing-features {
   list-style: none;
   text-align: left;
